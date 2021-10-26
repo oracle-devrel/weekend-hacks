@@ -363,12 +363,14 @@ while True:
     time.sleep(1)
 ```
 
-https://www.quartoknows.com/page/raspberry-pi-shutdown-button
+Further reading: https://www.quartoknows.com/page/raspberry-pi-shutdown-button
 
 
 ### Arduino
 
-https://www.instructables.com/Understanding-the-Pull-up-Resistor-With-Arduino/
+The Arduino is pretty stright forward. Plug in the USB, open up the amazingly simple and works yet leaves some to be desired Arduino IDE, upload this sketch then proceed with the rest of the project. Obviously you'll need a few other things sprinkled around this article but it should all be here. If not just ask and I will fix the errors or walk you through it.
+
+Further reading: https://www.instructables.com/Understanding-the-Pull-up-Resistor-With-Arduino/
 
 ```cpp
 #include <Adafruit_MotorShield.h>

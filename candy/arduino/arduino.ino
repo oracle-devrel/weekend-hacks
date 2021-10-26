@@ -23,7 +23,7 @@ void setup() {
     Serial.println("Could not find Motor Shield. Check wiring.");
     while (1);
   }
-  
+
   Serial.println("Motor Shield found.");
   motor->setSpeed(5);  // rpm
   pinMode(inPin, INPUT);
@@ -39,8 +39,6 @@ void loop() {
   val = digitalRead(inPin);
   if (val == HIGH) {
     Serial.println("on");
-    //motor->step(steps, FORWARD, SINGLE);
-    //motor->step(50, FORWARD, MICROSTEP);
     motor->step(steps, FORWARD, MICROSTEP);
   } else {
     Serial.println("off");
