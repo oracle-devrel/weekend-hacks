@@ -80,7 +80,7 @@ Copy this to the contents of the file:
 
 ```
 [Unit]
-Description=Description for sample script goes here
+Description=Frickin' awesome automated candy dispenser
 After=network.target
 
 [Service]
