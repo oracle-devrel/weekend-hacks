@@ -253,8 +253,6 @@ Tools
 - Soldering Iron
 - Hex Tool
 
-[Candy Dispenser STL files]()
-
 ### Pi
 
 Open up a command prompt and type run the following command:
@@ -453,4 +451,4 @@ Voltate Regulator GND -> 5v -
 
 This is a total hack. It gets the job done and is a good example of building a terrible python REST server to control an edge/IoT device running a Pi and Arduino. But it was fun! And that's really all that counts. It also will make a lot of children happy when I put the pipe in a skeleton on Halloween night and climb in to my Jack Skellington costume.
 
-I'm going to continue to evolve and refine this project so stay tuned for mmore...
+I'm going to continue to evolve and refine this project so stay tuned for more...
