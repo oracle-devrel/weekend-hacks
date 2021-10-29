@@ -26,7 +26,7 @@ class Handler(BaseHTTPRequestHandler):
 
             # Respond with the file contents.
             self.send_response(200)
-            self.send_header("Content-type", "text/html")
+            self.send_header("Content-type", "application/json")
             self.end_headers()
             content = open('index.html', 'rb').read()
             self.wfile.write(content)
@@ -34,7 +34,7 @@ class Handler(BaseHTTPRequestHandler):
         # curl http://<ServerIP>/candy
         elif self.path.upper() == "/candy".upper():
             self.send_response(200)
-            self.send_header("Content-type", "text/html")
+            self.send_header("Content-type", "application/json")
             self.end_headers()
             body = {'status': status}
             self.wfile.write(bytes(json.dumps(body), "utf8"))
@@ -43,7 +43,7 @@ class Handler(BaseHTTPRequestHandler):
         # curl http://<ServerIP>/query
         elif self.path.upper() == "/query".upper():
             self.send_response(200)
-            self.send_header("Content-type", "text/html")
+            self.send_header("Content-type", "application/json")
             self.end_headers()
             body = {'status': status, 'speed': speed}
             self.wfile.write(bytes(json.dumps(body), "utf8"))
